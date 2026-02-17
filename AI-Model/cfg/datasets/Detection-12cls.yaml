@@ -1,0 +1,35 @@
+# Detection Model using Ultralytics YOLO 🚀 
+# Dataset-v1.0 dataset 
+# Documentation: https://github.com/
+# Example usage: yolo train data=Detection-12cls.yaml
+# parent
+# ├── ultralytics
+# └── Dataset-v1.0  ← downloads
+
+path: ./Dataset/
+
+train: images/train # train images 
+val: images/val # val images 
+
+test: images/test/test300 
+
+# Class 
+names:
+  0: car
+  1: truck
+  2: person
+  3: fire
+  4: smoke
+  5: motorbike
+  6: bicycle
+  7: bus
+  8: traffic-cone
+  9: license-plate
+  10: cleaning-cart
+  11: shopping-cart
+
+
+
+# # Download script/URL (optional)
+# download: https://github.com/
+download: usr/src/datasets
