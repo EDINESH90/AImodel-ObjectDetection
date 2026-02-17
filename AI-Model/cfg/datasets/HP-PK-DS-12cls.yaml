@@ -1,0 +1,42 @@
+# HP-Ultralytics YOLO 🚀 
+# HP-PK-Dataset-v3.4 dataset from Humax-PARCS APGS
+# Documentation: https://github.com/APGS-Group/Test-Dataset
+# Example usage: yolo train data=HP-PK-DS-12cls.yaml
+# parent
+# ├── ultralytics
+# └── HP-PK-Dataset-v3.4  ← downloads
+
+path: /mnt/sda1/HP-Github/HP-PK-Model-Exp/HP-PK-Model-Exp/HP-PK-Dataset/
+# path: /mnt/sda1/HP-DATASET-STORAGE/HP-PK-DS/HP-PK-DS-Exp/HP-PK-VC-TrP4000/
+
+train: images/train # train images 
+val: images/val # val images 
+
+# test: images/test/test100 # test images 
+# test: images/test/test200 # test images % Indoor (ALGI100, Beluga100)
+# test: images/test/test400 # test images % Indoor (ALGI200, Beluga200)
+
+test: images/test/test300 # test images % Indoor (ALGI100, Beluga100), (Outdoor Beluga100) 
+# test: images/test/test500 # test images % Indoor (ALGI200, Beluga200), (Outdoor Beluga100) 
+
+
+# Class 
+names:
+  0: car
+  1: truck
+  2: person
+  3: fire
+  4: smoke
+  5: motorbike
+  6: bicycle
+  7: bus
+  8: traffic-cone
+  9: license-plate
+  10: cleaning-cart
+  11: shopping-cart
+
+
+
+# # Download script/URL (optional)
+# download: https://github.com/APGS-Group/
+download: usr/src/datasets
